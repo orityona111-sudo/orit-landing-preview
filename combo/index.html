@@ -1,0 +1,598 @@
+<!doctype html>
+<html lang="he" dir="rtl" data-look="4">
+<head>
+<meta charset="utf-8">
+<meta name="robots" content="noindex, nofollow">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>אורית יונה | הדרכה לנשים בזוגיות ארוכה</title>
+<meta name="description" content="איך להבין מה באמת יוצר את המרחק ביניכם, ולחזור להרגיש נראית, חשובה ובטוחה בתוך הקשר. בלי עוד שיחות מתישות ובלי שהוא יצטרך להשתנות קודם.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Assistant:wght@400;600;700;800&family=Frank+Ruhl+Libre:wght@500;700&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #FBF5F0;
+    --surface: #F3E3DC;
+    --ink: #4A3338;
+    --soft: #6E5459;
+    --accent: #9E4F5E;
+    --cta: #A8505F;
+    --cta-hover: #93434F;
+    --line: #E4CDC4;
+    --white: #FFFDFB;
+  }
+
+  * { box-sizing: border-box; margin: 0; }
+  html { scroll-behavior: smooth; -webkit-text-size-adjust: 100%; }
+  body {
+    font-family: "Assistant", Arial, sans-serif;
+    background: var(--bg);
+    color: var(--ink);
+    font-size: 20px;
+    line-height: 1.7;
+    overflow-x: hidden;
+  }
+  img { display: block; max-width: 100%; height: auto; }
+  h1, h2, .serif { font-family: "Frank Ruhl Libre", "Assistant", serif; font-weight: 700; line-height: 1.3; }
+  section { padding: 88px 24px; }
+  .narrow { max-width: 680px; margin: 0 auto; }
+  .center { text-align: center; }
+
+  .cta {
+    display: inline-block;
+    min-height: 60px;
+    padding: 16px 38px;
+    border: 0;
+    border-radius: 999px;
+    background: var(--cta);
+    color: #fff;
+    font-family: inherit;
+    font-size: 21px;
+    font-weight: 800;
+    line-height: 1.35;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    box-shadow: 0 10px 26px rgba(168, 80, 95, .26);
+    transition: background .2s ease, transform .2s ease;
+  }
+  .cta:hover { background: var(--cta-hover); transform: translateY(-2px); }
+  .cta:focus-visible, input:focus-visible { outline: 3px solid var(--ink); outline-offset: 3px; }
+
+  /* Hero: sections 1 + 2 of the copy */
+  .hero { padding: 72px 24px 88px; }
+  .hero-grid {
+    max-width: 1140px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1.05fr 1fr;
+    gap: 64px;
+    align-items: center;
+  }
+  .hero h1 { font-size: 44px; margin-bottom: 22px; }
+  .hero h1 .lead { display: block; font-size: 25px; font-weight: 500; color: var(--accent); margin-bottom: 8px; }
+  .hero .sub { font-size: 23px; margin-bottom: 14px; }
+  .hero .without { color: var(--soft); margin-bottom: 30px; }
+
+  .mockup { position: relative; }
+  .laptop-screen {
+    position: relative;
+    background: var(--ink);
+    border-radius: 16px 16px 0 0;
+    padding: 12px 12px 14px;
+    box-shadow: 0 28px 50px rgba(74, 51, 56, .22);
+  }
+  .laptop-screen img { width: 100%; aspect-ratio: 16 / 10; object-fit: cover; border-radius: 4px; }
+  .laptop-base {
+    height: 16px;
+    width: 112%;
+    margin-inline-start: -6%;
+    background: linear-gradient(180deg, #D9C4BC, #C2A9A0);
+    border-radius: 0 0 16px 16px;
+  }
+  .play {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 78px;
+    height: 78px;
+    margin: -39px 0 0 -39px;
+    border-radius: 50%;
+    background: rgba(255, 253, 251, .92);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, .28);
+  }
+  .play::after {
+    content: "";
+    position: absolute;
+    top: 24px;
+    left: 30px;
+    border-style: solid;
+    border-width: 15px 0 15px 25px;
+    border-color: transparent transparent transparent var(--cta);
+  }
+  .mockup-note { margin-top: 30px; text-align: center; color: var(--soft); }
+  .mockup-note strong { color: var(--ink); font-weight: 700; }
+
+  /* Section 3: the scene */
+  .scene { background: var(--white); }
+  .scene p { margin-bottom: 18px; }
+  .scene .opening { font-family: "Frank Ruhl Libre", serif; font-size: 32px; line-height: 1.35; margin-bottom: 24px; }
+  .thought {
+    font-family: "Frank Ruhl Libre", serif;
+    font-size: 29px;
+    line-height: 1.45;
+    color: var(--accent);
+    margin: 34px auto;
+    max-width: 560px;
+  }
+  .scene .turn { font-weight: 700; margin-top: 32px; }
+  .scene .reason { font-family: "Frank Ruhl Libre", serif; font-size: 32px; font-weight: 700; margin: 26px 0 0; }
+
+  /* Section 4: what she will discover */
+  .discover h2 { font-size: 36px; text-align: center; margin-bottom: 40px; }
+  .discover ul { list-style: none; padding: 0; }
+  .discover li {
+    position: relative;
+    padding: 22px 42px 22px 0;
+    border-bottom: 1px solid var(--line);
+    font-size: 21px;
+  }
+  .discover li:last-child { border-bottom: 0; }
+  .discover li::before {
+    content: "";
+    position: absolute;
+    right: 4px;
+    top: 34px;
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    background: var(--cta);
+  }
+
+  /* Section 5: testimonial */
+  .proof { padding-top: 0; }
+  .proof figure { max-width: 500px; margin: 0 auto; }
+  .proof img { width: 100%; border-radius: 18px; box-shadow: 0 18px 40px rgba(74, 51, 56, .16); }
+
+  /* Section 6: form */
+  .register { background: var(--surface); }
+  .register .lines { text-align: center; margin-bottom: 8px; }
+  .register .big { font-family: "Frank Ruhl Libre", serif; font-size: 32px; font-weight: 700; line-height: 1.35; margin-bottom: 10px; }
+  .register .invite { text-align: center; font-weight: 700; margin: 22px 0 28px; }
+  form { background: var(--white); padding: 34px; border-radius: 22px; max-width: 520px; margin: 0 auto; box-shadow: 0 14px 34px rgba(74, 51, 56, .08); }
+  label { display: block; font-weight: 700; margin-bottom: 6px; }
+  input {
+    display: block;
+    width: 100%;
+    min-height: 58px;
+    margin-bottom: 20px;
+    padding: 12px 16px;
+    border: 1.5px solid #B99A90;
+    border-radius: 12px;
+    background: #fff;
+    color: var(--ink);
+    font-family: inherit;
+    font-size: 20px;
+    text-align: right;
+  }
+  input[type="tel"], input[type="email"] { direction: ltr; text-align: right; }
+  form .cta { width: 100%; margin-top: 6px; }
+  .under-button { color: var(--soft); text-align: center; font-size: 18px; line-height: 1.55; margin-top: 18px; }
+  .thanks { display: none; text-align: center; font-weight: 700; font-size: 22px; padding: 24px 0; }
+
+  /* Section 7: about Orit */
+  .about-grid {
+    max-width: 1060px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 380px 1fr;
+    gap: 64px;
+    align-items: start;
+  }
+  .about-photo { position: sticky; top: 32px; }
+  .about-photo img {
+    width: 100%;
+    aspect-ratio: 4 / 5;
+    object-fit: cover;
+    object-position: 50% 12%;
+    border-radius: 190px 190px 22px 22px;
+    border: 7px solid var(--surface);
+  }
+  .about h2 { font-size: 38px; margin-bottom: 26px; }
+  .about h2 .hello { display: block; font-size: 24px; font-weight: 500; color: var(--accent); margin-bottom: 4px; }
+  .about p { margin-bottom: 18px; }
+  .more-list { font-family: "Frank Ruhl Libre", serif; font-size: 25px; line-height: 1.55; padding: 8px 22px 8px 0; margin: 8px 0 26px; border-right: 3px solid var(--cta); }
+  .more-list span { display: block; }
+  .turning-point { font-family: "Frank Ruhl Libre", serif; font-size: 27px; line-height: 1.45; color: var(--accent); margin: 26px 0; }
+  .closing { background: var(--surface); padding: 72px 24px; text-align: center; }
+  .closing p { margin-bottom: 14px; }
+  .closing .big { font-family: "Frank Ruhl Libre", serif; font-size: 30px; font-weight: 700; line-height: 1.4; margin-bottom: 28px; }
+
+  footer { text-align: center; padding: 26px 24px; color: var(--soft); font-size: 18px; }
+
+  /* Gentle reveal on scroll, only when scripts are running */
+  .js .reveal { opacity: 0; transform: translateY(22px); transition: opacity .7s ease, transform .7s ease; }
+  .js .reveal.seen { opacity: 1; transform: none; }
+
+  @media (max-width: 900px) {
+    body { font-size: 19px; }
+    section { padding: 60px 20px; }
+    .hero { padding: 40px 20px 60px; }
+    .hero-grid, .about-grid { grid-template-columns: minmax(0, 1fr); gap: 36px; }
+    .hero h1 { font-size: 33px; }
+    .hero h1 .lead { font-size: 22px; }
+    .hero .sub { font-size: 21px; }
+    .hero .cta { display: block; width: 100%; }
+    .laptop-base { width: 106%; margin-inline-start: -3%; }
+    .play { width: 62px; height: 62px; margin: -31px 0 0 -31px; }
+    .play::after { top: 19px; left: 24px; border-width: 12px 0 12px 20px; }
+    .scene .opening, .scene .reason, .register .big { font-size: 27px; }
+    .thought { font-size: 25px; }
+    .discover h2 { font-size: 30px; }
+    .discover li { font-size: 20px; }
+    form { padding: 24px 20px; }
+    form .cta { padding: 16px 12px; font-size: 20px; white-space: nowrap; }
+    .about-photo { position: static; max-width: 300px; margin: 0 auto; }
+    .about h2 { font-size: 33px; text-align: center; }
+    .closing { padding: 56px 20px; }
+    .closing .cta { display: block; width: 100%; }
+  }
+
+  @media (max-width: 380px) {
+    form .cta { font-size: 18px; padding: 16px 8px; }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    html { scroll-behavior: auto; }
+    .js .reveal { opacity: 1; transform: none; transition: none; }
+    .cta { transition: none; }
+  }
+</style>
+<style>
+/* Shared by all three mockups: gold appears on buttons only */
+:root[data-look] {
+  --gold: linear-gradient(135deg, #C8A04A 0%, #E8CC80 50%, #C8A04A 100%);
+  --ink: #4A3338;
+  --soft: #6B5257;
+  --cta: #B9767F;
+  --rose: #D9AFAF;
+  --rose-soft: #F2DEDA;
+  --cream: #FBF6EC;
+  --white: #FFFFFF;
+  scroll-padding-top: 84px;
+}
+:root[data-look] .cta,
+:root[data-look] .cta:hover {
+  background: var(--gold);
+  color: #3A2A18;
+  box-shadow: 0 10px 24px rgba(168, 130, 60, .28);
+}
+:root[data-look] .cta:hover { filter: brightness(1.05); }
+:root[data-look] .about-grid { display: block; max-width: 680px; }
+:root[data-look] .about-photo { position: static; width: 320px; max-width: 80%; margin: 8px auto 34px; }
+:root[data-look] .about-photo img { aspect-ratio: 1 / 1; border-radius: 50%; border: 4px solid var(--accent); padding: 6px; background: var(--white); }
+:root[data-look] .about h2 { text-align: center; margin-bottom: 18px; }
+:root[data-look] .about p { text-align: center; }
+:root[data-look] .about .want { font-family: "Frank Ruhl Libre", serif; font-size: 30px; font-weight: 700; margin: 30px 0 10px; }
+:root[data-look] .about .more-list { text-align: center; padding: 0; margin: 0 0 30px; border-right: 0; font-size: 24px; }
+:root[data-look] .about .turning-point { font-size: 34px; line-height: 1.3; margin: 26px 0 30px; }
+:root[data-look] .about .about-end { font-family: "Frank Ruhl Libre", serif; font-size: 32px; font-weight: 700; line-height: 1.3; color: var(--accent); margin-top: 30px; }
+:root[data-look] .devices { width: 100%; height: auto; filter: drop-shadow(0 18px 26px rgba(74, 51, 56, .12)); }
+:root[data-look] .scene-photo {
+  --photo-width: min(860px, calc(100vw - 40px));
+  width: var(--photo-width);
+  margin: 36px calc((100% - var(--photo-width)) / 2);
+}
+:root[data-look] .scene-photo img { width: 100%; border-radius: 20px; box-shadow: 0 18px 40px rgba(74, 51, 56, .18); }
+
+.mock-bar {
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  padding: 10px 12px;
+  background: #fff;
+  border-bottom: 1px solid #E9D9D4;
+}
+.mock-bar button {
+  flex: 0 1 170px;
+  min-width: 0;
+  min-height: 44px;
+  padding: 6px 4px;
+  border: 1.5px solid #CFA9A9;
+  border-radius: 10px;
+  background: #fff;
+  color: #4A3338;
+  font-family: inherit;
+  font-size: 17px;
+  font-weight: 700;
+  cursor: pointer;
+}
+.mock-bar button[aria-pressed="true"] { background: #4A3338; border-color: #4A3338; color: #fff; }
+
+/* Mockup 1: cream and soft rose, warm and quiet */
+:root[data-look="1"] {
+  --bg: var(--cream);
+  --surface: var(--rose-soft);
+  --accent: #8F4C58;
+  --line: #E8D5CF;
+}
+:root[data-look="1"] .scene { background: var(--white); }
+:root[data-look="1"] .hero-grid { max-width: 1320px; grid-template-columns: minmax(0, .8fr) minmax(0, 1.2fr); }
+
+/* Mockup 2: full antique rose, centered and emotional */
+:root[data-look="2"] {
+  --bg: var(--cream);
+  --surface: var(--rose);
+  --accent: #8A4753;
+  --line: #E8D5CF;
+}
+:root[data-look="2"] .hero { background: var(--rose); }
+:root[data-look="2"] .hero-grid { max-width: 1040px; grid-template-columns: minmax(0, 1fr); gap: 48px; text-align: center; }
+:root[data-look="2"] .hero h1 { font-size: 50px; }
+:root[data-look="2"] .hero h1 .lead,
+:root[data-look="2"] .hero .without,
+:root[data-look="2"] .mockup-note { color: var(--ink); }
+:root[data-look="2"] .mockup { width: 100%; margin: 0 auto; }
+:root[data-look="2"] .scene { background: var(--white); }
+:root[data-look="2"] .discover .narrow { background: var(--white); padding: 48px; border-radius: 24px; box-shadow: 0 14px 34px rgba(74, 51, 56, .07); }
+:root[data-look="2"] .proof { padding-top: 0; }
+:root[data-look="2"] .closing { background: var(--rose); }
+
+/* Mockup 3: white and editorial, split opening */
+:root[data-look="3"] {
+  --bg: var(--white);
+  --surface: var(--cream);
+  --accent: #8F4C58;
+  --line: #EEDFDA;
+}
+:root[data-look="3"] .cta { border-radius: 10px; }
+:root[data-look="3"] .hero { padding: 0; }
+:root[data-look="3"] .hero-grid { max-width: none; grid-template-columns: minmax(0, .8fr) minmax(0, 1.2fr); gap: 0; align-items: stretch; }
+:root[data-look="3"] .hero-grid > div:first-child { padding: 88px 56px; align-self: center; }
+:root[data-look="3"] .mockup { display: flex; flex-direction: column; justify-content: center; padding: 72px 40px; background: var(--rose); }
+:root[data-look="3"] .mockup-note { color: var(--ink); }
+:root[data-look="3"] .scene { background: var(--cream); }
+:root[data-look="3"] .scene .narrow { text-align: right; }
+:root[data-look="3"] .thought { margin-inline: 0; padding-right: 22px; border-right: 3px solid var(--rose); }
+:root[data-look="3"] .discover ul { counter-reset: point; }
+:root[data-look="3"] .discover li { counter-increment: point; padding-right: 58px; }
+:root[data-look="3"] .discover li::before {
+  content: counter(point);
+  top: 16px;
+  right: 0;
+  width: auto;
+  height: auto;
+  border-radius: 0;
+  background: none;
+  color: var(--accent);
+  font-family: "Frank Ruhl Libre", serif;
+  font-size: 34px;
+  font-weight: 700;
+}
+:root[data-look="3"] .proof { background: var(--white); }
+:root[data-look="3"] .register { background: var(--rose-soft); }
+:root[data-look="3"] .register .narrow {
+  max-width: 1040px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px 56px;
+  align-items: center;
+}
+:root[data-look="3"] .register .lines { text-align: right; align-self: end; }
+:root[data-look="3"] .register .invite { text-align: right; align-self: start; margin: 0; grid-row: 2; }
+:root[data-look="3"] .register form { grid-column: 2; grid-row: 1 / span 2; width: 100%; }
+:root[data-look="3"] .closing { background: var(--cream); }
+:root[data-look="3"] .about-photo img { border-radius: 22px; border-color: var(--rose); }
+
+/* Mockup 4: the opening of mockup 2 with the side-by-side form of mockup 3 */
+:root[data-look="4"] {
+  --bg: var(--cream);
+  --surface: var(--rose-soft);
+  --accent: #8A4753;
+  --line: #E8D5CF;
+}
+:root[data-look="4"] .hero { background: var(--rose); }
+:root[data-look="4"] .hero-grid { max-width: 1040px; grid-template-columns: minmax(0, 1fr); gap: 48px; text-align: center; }
+:root[data-look="4"] .hero h1 { font-size: 50px; }
+:root[data-look="4"] .hero h1 .lead,
+:root[data-look="4"] .hero .without,
+:root[data-look="4"] .mockup-note { color: var(--ink); }
+:root[data-look="4"] .mockup { width: 100%; margin: 0 auto; }
+:root[data-look="4"] .scene { background: var(--white); }
+:root[data-look="4"] .discover .narrow { background: var(--white); padding: 48px; border-radius: 24px; box-shadow: 0 14px 34px rgba(74, 51, 56, .07); }
+:root[data-look="4"] .register .narrow {
+  max-width: 1040px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px 56px;
+  align-items: center;
+}
+:root[data-look="4"] .register .lines { text-align: right; align-self: end; }
+:root[data-look="4"] .register .invite { text-align: right; align-self: start; margin: 0; grid-row: 2; }
+:root[data-look="4"] .register form { grid-column: 2; grid-row: 1 / span 2; width: 100%; }
+:root[data-look="4"] .closing { background: var(--rose); }
+
+@media (max-width: 900px) {
+  :root[data-look] .about .turning-point { font-size: 28px; }
+  :root[data-look] .about .about-end, :root[data-look] .about .want { font-size: 27px; }
+  :root[data-look="1"] .hero-grid { grid-template-columns: minmax(0, 1fr); }
+  :root[data-look="2"] .hero h1, :root[data-look="4"] .hero h1 { font-size: 33px; }
+  :root[data-look="2"] .discover .narrow, :root[data-look="4"] .discover .narrow { padding: 28px 20px; }
+  :root[data-look="4"] .register .narrow { display: block; }
+  :root[data-look="4"] .register .invite { margin: 18px 0 24px; }
+  :root[data-look="3"] .hero-grid { grid-template-columns: minmax(0, 1fr); }
+  :root[data-look="3"] .hero-grid > div:first-child { padding: 40px 20px; }
+  :root[data-look="3"] .mockup { padding: 40px 20px; }
+  :root[data-look="3"] .register .narrow { display: block; }
+  :root[data-look="3"] .register .invite { margin: 18px 0 24px; }
+}
+</style>
+</head>
+<body>
+<script>document.documentElement.classList.add('js');</script>
+
+<main>
+  <!-- מקטעים 1-2: כותרת והמחשה ויזואלית -->
+  <section class="hero">
+    <div class="hero-grid">
+      <div class="reveal">
+        <h1>
+          <span class="lead">לנשים שנמצאות בזוגיות ארוכה,</span>
+          אוהבות את בן הזוג שלהן, אבל כבר לא רוצות להרגיש לבד לידו
+        </h1>
+        <p class="sub">איך להבין מה באמת יוצר את המרחק ביניכם, ולחזור להרגיש נראית, חשובה ובטוחה בתוך הקשר</p>
+        <p class="without">בלי עוד שיחות מתישות<br>ובלי שהוא יצטרך להשתנות קודם</p>
+        <a class="cta" href="#register">כן, אני רוצה לראות את ההדרכה</a>
+      </div>
+      <div class="mockup reveal">
+        <img class="devices" src="images/hero-mockup.webp" width="1800" height="880" alt="ההדרכה שותפים לדירה של אורית יונה על מסכי מחשב, טאבלט וטלפון" fetchpriority="high">
+        <p class="mockup-note"><strong>הדרכה קצרה של 10-15 דקות</strong> לנשים שמרגישות שהזוגיות הפכה עם השנים ליותר בית, ילדים וסידורים...<br>ופחות "אנחנו".</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- מקטע 3: חיבור לבעיה -->
+  <section class="scene">
+    <div class="narrow center">
+      <p class="opening reveal">ערב, כל אחד בטלפון שלו.</p>
+      <div class="reveal">
+        <p>רוב השיחות הן על הילדים, הקניות ומה צריך לעשות מחר.</p>
+        <p>וכשאת מנסה לפתוח משהו קצת יותר עמוק...<br>זה נגמר ב"בסדר", "לא יודע" או בשקט.</p>
+      </div>
+      <figure class="scene-photo reveal">
+        <img src="images/roommates-1.jpg" width="1536" height="1024" loading="lazy" alt="זוג יושב בערב על ספה, כל אחד בקצה שלה ובטלפון שלו">
+      </figure>
+      <div class="reveal">
+        <p>ואז עולה המחשבה:</p>
+      </div>
+      <p class="thought reveal">"איך יכול להיות שאני חיה איתו שנים... ועדיין מרגישה לבד?"</p>
+      <div class="reveal">
+        <p class="turn">והקטע הכי מתסכל?</p>
+        <p>שככל שאת מנסה להתקרב יותר...<br>לפעמים הוא דווקא נסגר יותר.</p>
+        <p class="reason">ויש סיבה לזה.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- מקטע 4: מה תגלי -->
+  <section class="discover">
+    <div class="narrow">
+      <h2 class="reveal">ואת זה תגלי בהדרכה:</h2>
+      <ul class="reveal">
+        <li>למה זוגיות של שנים יכולה להפוך בלי ששמים לב לשותפות של בית וסידורים</li>
+        <li>למה דווקא הניסיון שלך לגרום לו לדבר ולהתקרב יכול להשאיר אתכם באותו מעגל</li>
+        <li>איך הפרשנות שלך למה שהוא עושה משפיעה על מה שקורה ביניכם</li>
+        <li>ומה אפשר להתחיל לראות אחרת כבר עכשיו, גם בלי שהוא יעבור איתך תהליך</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- מקטע 5: עדות -->
+  <section class="proof">
+    <figure class="reveal">
+      <img src="images/testimonial.png" width="554" height="403" loading="lazy"
+           alt="הודעת וואטסאפ מלקוחה: אורית יקרה, רוצה להודות לך על תהליך הליווי בשיטת התדר, שעברתי איתך. ממפגש למפגש עם הרבה סבלנות, דאגת לדייק אותי, לוודא שאני מבינה את הדברים. התהליך גרם לי להבין ואף לשנות התנהגויות שלי, בעיקר בנושא הזוגיות. אני בתחילתו של מסע, ולאט לאט אני מרגישה, בינתיים בדברים קטנים, את השינוי בי ובעקבות כך גם שינוי אצל בן זוגי. בעקבות התהליך הבנתי שאני צריכה לעבוד ולשנות דברים בי ושאין ביכולתי לשנות את האחר. תודה לך על הכל.">
+    </figure>
+  </section>
+
+  <!-- מקטע 6: הרשמה -->
+  <section class="register" id="register">
+    <div class="narrow">
+      <div class="lines reveal">
+        <p class="big">את לא צריכה לפתור עכשיו את כל הבעיות בזוגיות.</p>
+        <p>את רק צריכה להתחיל להבין מה באמת קורה ביניכם.</p>
+      </div>
+      <p class="invite reveal">השאירי פרטים וקבלי גישה להדרכה.</p>
+      <!-- טופס לדוגמה: עדיין לא מחובר למערכת דיוור, הפרטים לא נשמרים בשום מקום -->
+      <form id="lead-form" class="reveal">
+        <div id="fields">
+          <label for="name">שם</label>
+          <input id="name" name="name" type="text" autocomplete="given-name" required>
+          <label for="email">מייל</label>
+          <input id="email" name="email" type="email" autocomplete="email" inputmode="email" required>
+          <button class="cta" type="submit">כן, אני רוצה לראות את ההדרכה</button>
+          <p class="under-button">15 דקות. בלי טיפים לזוגיות "מושלמת"<br>ובלי לנסות להפוך את בעלך למישהו אחר.</p>
+        </div>
+        <p class="thanks" id="thanks" role="status">זו גרסת תצוגה בלבד, והפרטים לא נשמרו. תודה שבדקת!</p>
+      </form>
+    </div>
+  </section>
+
+  <!-- מקטע 7: הצגה עצמית -->
+  <section class="about">
+    <div class="about-grid">
+      <div>
+        <h2 class="reveal"><span class="hello">אם עוד לא הספקנו להכיר, נעים מאוד,</span>קוראים לי אורית יונה.</h2>
+        <div class="about-photo reveal">
+          <img src="images/orit-about-circle.jpg" width="720" height="720" alt="אורית יונה" loading="lazy">
+        </div>
+        <div class="reveal">
+          <p>ואני מכירה מקרוב את התחושה הזאת<br>של להסתכל על הזוגיות שלך ולחשוב:<br><strong>"יש לנו כל כך הרבה...<br>אז למה משהו עדיין חסר לי?"</strong></p>
+          <p>אחרי שנים שבהן בנינו בית,<br>משפחה וקריירה,<br>בשנת 2022 החיים שלי נעצרו כשחליתי.</p>
+          <p>ופתאום היה לי ברור שאני לא מוכנה<br>לחזור לאותם חיים שבהם<br>אנחנו בעיקר מתפעלים הכול יחד,<br>בזמן שהחיים פשוט קורים לנו.</p>
+          <p class="want">רציתי יותר.</p>
+        </div>
+        <div class="more-list reveal">
+          <span>יותר תקשורת אמיתית.</span>
+          <span>יותר קרבה.</span>
+          <span>יותר פתיחות.</span>
+          <span>יותר שקט.</span>
+          <span>יותר תחושה שאנחנו באמת ביחד.</span>
+        </div>
+        <div class="reveal">
+          <p>אז התחלתי לחקור, ללמוד אימון רגשי,<br>וגם לעבור בעצמי תהליך מהצד השני.</p>
+          <p>ושם נפל לי אסימון ששינה עבורי הרבה:</p>
+        </div>
+        <p class="turning-point reveal">אני לא יכולה לשנות את בן הזוג שלי.</p>
+        <div class="reveal">
+          <p>אבל אני כן יכולה להבין<br>מי אני בתוך הזוגיות,<br>מה מפעיל אותי,<br>ואיך אני משפיעה על הדינמיקה בינינו.</p>
+          <p>עם הזמן הפכתי<br>את הדרך האישית הזאת למקצוע.</p>
+          <p><strong>והיום אני עוזרת לנשים<br>בזוגיות ארוכת שנים<br>להבין מה קורה להן בתוך הקשר,<br>ולצאת מהתחושה שהן חיות<br>עם בן הזוג שלהן כמו "שותפים לדירה".</strong></p>
+          <p>וזו בדיוק הסיבה שיצרתי את ההדרכה הזאת.</p>
+          <p>כדי לעזור לך לראות למה נוצר המרחק,<br>למה אותן שיחות חוזרות שוב ושוב<br>לא באמת מקרבות,<br>ומה את יכולה להתחיל להבין אחרת<br>כבר עכשיו.</p>
+          <p class="about-end">בלי לחכות שהוא ישתנה קודם.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="closing">
+    <div class="narrow reveal">
+      <p>אם משהו ממה שקראת כאן מרגיש לך מוכר...<br>אני מזמינה אותך לצפות בהדרכה.</p>
+      <p>היא קצרה, פשוטה, ונועדה לתת לך דבר אחד חשוב:</p>
+      <p class="big">להתחיל להבין מה באמת קורה ביניכם, ומה נמצא בידיים שלך.</p>
+      <a class="cta" href="#register">כן, אני רוצה לראות את ההדרכה</a>
+    </div>
+  </section>
+</main>
+
+<footer>אורית יונה</footer>
+
+<script>
+  var items = document.querySelectorAll('.reveal');
+  if ('IntersectionObserver' in window) {
+    var observer = new IntersectionObserver(function (entries) {
+      entries.forEach(function (entry) {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('seen');
+          observer.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.12 });
+    items.forEach(function (item) { observer.observe(item); });
+  } else {
+    items.forEach(function (item) { item.classList.add('seen'); });
+  }
+
+  // טופס לדוגמה: כאן יתחבר החיבור למערכת הדיוור
+  document.getElementById('lead-form').addEventListener('submit', function (event) {
+    event.preventDefault();
+    document.getElementById('fields').style.display = 'none';
+    document.getElementById('thanks').style.display = 'block';
+  });
+</script>
+</body>
+</html>
